@@ -1,17 +1,32 @@
 package com.zzd.vesta.bean;
 
+/**
+ * ID的基础生成规则
+ */
 public class IdMeta {
-
+    /**
+     * 机器码占位
+     */
     private byte machineBits;
-
+    /**
+     * 序列号占位
+     */
     private byte seqBits;
-
+    /**
+     * 时间戳占位
+     */
     private byte timeBits;
-
+    /**
+     * 生成方式占位
+     */
     private byte genMethodBits;
-
+    /**
+     * 类型占位
+     */
     private byte typeBits;
-
+    /**
+     * 版本号占位
+     */
     private byte versionBits;
 
     public IdMeta(byte machineBits, byte seqBits, byte timeBits, byte genMethodBits, byte typeBits, byte versionBits) {
